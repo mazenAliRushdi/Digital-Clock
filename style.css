@@ -15,7 +15,8 @@ body {
     font-family: 'Courier New', monospace;
     font-size: 3.5em;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .clock:hover {
@@ -25,4 +26,5 @@ body {
 #time {
     letter-spacing: 5px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    transition: font-family 0.3s ease-in-out;
 }
