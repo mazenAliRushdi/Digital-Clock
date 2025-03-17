@@ -6,7 +6,8 @@ const instructionsElement = document.getElementById('instructions');
 function updateClock() {
     const now = new Date();
     const time = now.toLocaleTimeString();
-    const date = now.toLocaleDateString();
+    const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const date = now.toLocaleDateString(undefined, dateOptions);
     timeElement.textContent = time;
     dateElement.textContent = date;
 }
